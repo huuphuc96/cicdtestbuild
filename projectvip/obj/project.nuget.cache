@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1mdh4SmrjCKkCWAFNKYepfyZo26Xv25xANkOuDWN5Pftayd0ifKWa18s0lh6WjU8rbSyJ70jOdtFsI9mjWZM5g==",
+  "success": true,
+  "projectFilePath": "D:\\New folder (2)\\projectvip\\projectvip\\projectvip.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
