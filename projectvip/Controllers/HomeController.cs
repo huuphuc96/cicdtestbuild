@@ -24,6 +24,7 @@ namespace projectvip.Controllers
         }
         public IActionResult Index()
         {
+            // test master
             return View();
         }
         public IActionResult Privacy()
