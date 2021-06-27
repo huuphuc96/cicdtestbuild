@@ -25,6 +25,7 @@ namespace projectvip.Controllers
 
         public IActionResult Privacy()
         {
+            // dua
             return View();
         }
 
