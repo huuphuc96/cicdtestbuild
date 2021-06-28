@@ -22,15 +22,6 @@ namespace projectvip.Controllers
         {
             return View();
         }
-        public IActionResult Index()sadsadsad
-        {
-            // test master
-            return View();
-        }
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         public IActionResult Privacy()
         {
