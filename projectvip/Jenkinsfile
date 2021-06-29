@@ -16,10 +16,7 @@ pipeline {
       }
       steps {
         
-      dockerImage = docker.build("username/repository:tag")
-      docker.withRegistry('https://registry-1.docker.io/v2/', 'docker-hub-credentials') {
-        dockerImage.push()
-      }
+      sh "docker build -t ${DOCKER_IMAGE}:${DOCKER_TAG} . "
         
 
         //clean to save disk
