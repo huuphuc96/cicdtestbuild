@@ -20,7 +20,7 @@ pipeline {
       docker.withRegistry('https://registry-1.docker.io/v2/', 'docker-hub-credentials') {
         dockerImage.push()
       }
-        }
+        
 
         //clean to save disk
         sh "docker image rm ${DOCKER_IMAGE}:${DOCKER_TAG}"
