@@ -7,7 +7,10 @@ pipeline {
   }
 
   stages {
-    
+    stage('Initialize'){
+        def dockerHome = tool 'docker-hub'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+    }
 
     stage("build") {
       agent { node {label 'master'}}
