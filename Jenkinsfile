@@ -10,14 +10,9 @@ pipeline {
  }
         stage('Publish'){
      steps{
-       bat "dotnet publish C:\Website\\Projectvip.csproj "
+       bat "dotnet publish"
      }
 }
-        stage('Publish') {
-   steps {
-    bat "dotnet push C:\Website\\Projectvip.csproj"
-   }
-  }
         
         post{
   always{
