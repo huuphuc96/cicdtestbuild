@@ -2,21 +2,22 @@ pipeline {
     agent none
 
     stages {
-        stage('Build'){
-   steps{
-      bat "dotnet build C:\Website\\Projectvip.csproj --configuration Release"
-    }
+       stage('Build') {
+ steps {
+  bat "dotnet build --configuration Release"
+ }
+}
  }
         stage('Publish'){
      steps{
        bat "dotnet publish C:\Website\\Projectvip.csproj "
      }
 }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+        stage('Publish') {
+   steps {
+    bat "dotnet push C:\Website\\Projectvip.csproj"
+   }
+  }
         
         post{
   always{
