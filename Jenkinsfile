@@ -12,6 +12,7 @@ pipeline {
      steps{
        bat "dotnet publish"
      }
+        }
 
         
         post{
@@ -21,5 +22,5 @@ pipeline {
     subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
     }
   }
-    }
+    
 }
