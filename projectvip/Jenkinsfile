@@ -12,7 +12,7 @@ pipeline {
      steps{
        bat "dotnet publish"
      }
-}
+
         
         post{
   always{
