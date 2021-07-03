@@ -2,7 +2,7 @@
 pipeline {
     agent any
     
-    stage ('Ste') {
+    stage ('Build') {
         steps{ 
             git url: 'https://github.com/cyrille-leclerc/multi-module-maven-project'
         }
@@ -19,11 +19,6 @@ pipeline {
 
     }
     }
-    stage('Build') {
-            steps {
-                sh 'make' 
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
-            }
-        }
+    
 }
 }
