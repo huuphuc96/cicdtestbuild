@@ -14,7 +14,7 @@ String publishedPath = "cicdtestbuild\\projectvip\\bin\\Release\\netcoreapp2.2\\
 String iisApplicationName = "projectvip"
 
 //Hedef makinesindeki IIS'de tanımlı olan sitenizin dizini
-String iisApplicationPath = "C:\Website\PhucDepTrai_LandingPAGE"
+String iisApplicationPath = "C:\\Website\\PhucDepTrai_LandingPAGE"
 
 //Hedef makinesinin IP'si
 String targetServerIP = "0.0.0.0"
