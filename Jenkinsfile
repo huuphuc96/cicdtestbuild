@@ -1,8 +1,8 @@
 
 pipeline {
     agent any
-    
-    stage ('Build') {
+    stage{
+        stage ('Build') {
         steps{ 
             git url: 'https://github.com/cyrille-leclerc/multi-module-maven-project'
         }
@@ -15,5 +15,7 @@ pipeline {
 
     }
     }
+    }
+    
     
 }
