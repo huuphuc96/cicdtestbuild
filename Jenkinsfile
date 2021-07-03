@@ -8,13 +8,6 @@ pipeline {
         }
         }
     
-    
-    stage ('Install Stage') {
-    steps {
-    bat'mvn install'
-
-    }
-    }
     }
     
     
