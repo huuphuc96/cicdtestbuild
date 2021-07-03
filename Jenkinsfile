@@ -12,14 +12,13 @@ pipeline {
     } // withMaven will discover the generated Maven artifacts, JUnit Surefire & FailSafe reports and FindBugs reports
         }
     
-  }
     
-stage ('Install Stage') {
-steps {
-bat'mvn install'
+    stage ('Install Stage') {
+    steps {
+    bat'mvn install'
 
-}
-}
+    }
+    }
     stage('Build') {
             steps {
                 sh 'make' 
