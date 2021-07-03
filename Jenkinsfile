@@ -3,7 +3,7 @@ pipeline {
     agent any
 
 stages {
-    stage ('Build') {
+    stage ('Ste') {
     git url: 'https://github.com/cyrille-leclerc/multi-module-maven-project'
     withMaven {
       sh "mvn clean verify"
