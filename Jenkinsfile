@@ -4,7 +4,6 @@ pipeline {
 stages {
     stage('Build') {
         steps {
-                cd ${"cicdtestbuild/projectvip"}
         dotnet build -c Release /p:Version=${BUILD_NUMBER}
         dotnet publish -c Release --no-build
             }
