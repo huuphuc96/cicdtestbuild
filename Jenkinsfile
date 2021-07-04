@@ -11,7 +11,7 @@ pipeline {
         stage('Publish'){
      steps{
          
-         bat "dotnet publish projectvip/projectvip.csproj --configuration Release --no-restore"
+         bat "dotnet publish ../../src/projectvip/projectvip.csproj --configuration Release --no-restore"
      }
 }
         
