@@ -10,8 +10,7 @@ pipeline {
     
         stage('Publish'){
      steps{
-         
-         bat "dotnet publish ../../projectvip/projectvip.sln --configuration Release --no-restore"
+         bat"dotnet publish ../../projectvip/projectvip.csproj -o C:\\Website\\PhucDepTrai_LandingPAGE"
      }
 }
         
