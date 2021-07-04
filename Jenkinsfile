@@ -10,7 +10,7 @@ pipeline {
     
         stage('Publish'){
      steps{
-       bat "dotnet publish -o C:\\Website\\PhucDepTrai_LandingPAGE\\"
+         bat"dotnet publish C:\\Users\\new\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\Jenkin-git dotnet publish -o C:\\Website\\PhucDepTrai_LandingPAGE"
      }
 }
         
